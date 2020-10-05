@@ -3,16 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
-
+      
     steps:
       - checkout
       
       - run:
           name: Saludos
-          command: echo Hello, world
-          
+          command: echo Hello, world.
+      
       - run:
-          name: Imprime la fecha actual
+          name: Imrprime la fecha actual
           command: date
-          
-     
