@@ -11,6 +11,10 @@ jobs:
           name: Saludos
           command: echo Hello, world.
       
+      - run: 
+          name: Compilar el sitio
+          command: bundle exec jekyll build
+          
       - run:
-          name: Imrprime la fecha actual
+          name: Imprime la fecha actual
           command: date
